@@ -1,0 +1,136 @@
+<!-- Esta etiqueta indica que es un documento HTML5, indica el estandar -->
+<!DOCTYPE html>
+
+<!--Etiqueta principal del documento html-->
+<!-- lang es un atributo del idioma del documento -->
+<html lang="es">
+  <!-- Cabecera del documento - contiene información para los navegadores -->
+  <head>
+    <!-- charset  - Juego de caracteres que se codifican en la pagina como la ñ-->
+    <meta charset="UTF-8" />
+
+    <!-- viewport es la zona visible donde se renderiza la pághina web, name es su nombre y content es la zona, ayuda con el responsive desing -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Título de la pagina -->
+    <!-- Entre 55 y 65 caracteres -->
+    <title>Aprendiendo HTML</title>
+
+    <!-- Descripción de la página -->
+    <!-- Maximo 165 caracteres -->
+    <meta
+      name="description"
+      content="Pagina en donde estamos aprendiendo los fundamentos de HTML"
+    />
+  </head>
+
+  <!-- Este es el cuerpo del documento y aqui se ercribe lo que se ve en la página -->
+  <body>
+    <h2>Aprendiendo HTML</h2>
+    <!-- Enlaces a de la sección de introducción a HTML y su documentación
+    https://www.w3.org/html/
+    https://html.spec.whatwg.org/
+    https://www.w3.org/blog/news/archives...
+    https://developer.mozilla.org/es/docs...
+    https://htmlreference.io/ 
+    https://desarrolloweb.com/articulos/1...-->
+
+    <p>Escribiendo mi primer documento html</p>
+    <hr>
+    <!-- Títulos -->
+    <!-- Debe existir solo h1 -->
+    <h2>Encabezados HTML</h2>
+    <h1>Encabezado de nivel 1</h1>
+    <h2>Encabezado de nivel 2</h2>
+    <h3>Encabezado de nivel 3</h3>
+    <h4>Encabezado de nivel 4</h4>
+    <h5>Encabezado de nivel 5</h5>
+    <h6>Encabezado de nivel 6</h6>
+    <hr>
+    <h2>Etiquetas de texto básicas</h2>
+    <!-- Párrafo -->
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis
+      architecto eum fugit necessitatibus? Natus quae, ab magnam ex rerum sint
+      aliquid obcaecati dolore, assumenda eum et voluptatum quam nobis. Est?
+    </p>
+
+    <!-- Modificacion de texto dentro de parrafos -->
+    <p>
+      palabras en: <b>Negrita</b>, <i>Itálica</i>, <u>subrayado</u> ,
+      e=mc<sup>2</sup>, H<sub>2</sub>O, <mark>marcatexto</mark>,
+      <small>Letras pequeñas</small>
+    </p>
+    <hr>
+    <h2>Etiqueras de texto semánticas</h2>
+    <!-- Modificaciones con significado semántico -->
+    <p>
+      <strong>Este texto es importante</strong>,
+      <em>Este texto hace énfasis</em>.
+    </p>
+    <blockquote>Yo solo sé, que nada sé</blockquote>
+    <cite>Sócrates</cite>
+    <hr>
+    <h2>Etiquetas de saltos</h2>
+    <!-- Etiquetas de salto -->
+    <!-- Salto de línea -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+      Minima molestias repellat, autem blanditiis perspiciatis tempora est,
+      accusantium suscipit quidem, <br />in eos. Hic deserunt magni voluptates
+      aliquam distinctio iure? In, sunt.
+    </p>
+
+    <!-- Salto semántico de cambio contenido -->
+    <hr>
+    <h2>Etiquetas de formateo</h2>
+    <p>
+        <pre>
+            Tareas por hacer
+            -Terminar la revisión de pagos
+              -Terminar la revision de cargue de facturas
+                -Revisar las fotos de los pagos
+              -Revisar las cámaras
+            -Revisar los computadores
+        </pre>
+    </p>
+    <p>
+        <code>Este texto esta en formato de código</code>
+    </p>
+
+    <p>
+        <pre>
+            <code>
+                import React, { Component } from 'react';
+
+                class Button extends Component {
+                    render() {
+                        // ...
+                    }
+                }
+
+                export default Button; // Don’t forget to use export default!
+            </code>
+        </pre>
+    </p>
+
+    <!-- 
+        Para el símbolo < Se usa &lt;
+        Para el símbolo > Se usa &gt; 
+    -->
+    <pre>
+        <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+              &lt;head&gt;
+                &lt;title&gt;Hello World&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.&lt;/p&gt;
+              &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+    </pre>
+    <h2>Voy en 2:03:25 Seccion 20</h2>
+  </body>
+</html>
