@@ -22,6 +22,12 @@
       name="description"
       content="Pagina en donde estamos aprendiendo los fundamentos de HTML"
     />
+    <style>
+      h2 {
+        color: orangered;
+      }
+    </style>
+    <link rel="stylesheet" href="/assets/estilos.css">
   </head>
 
   <!-- Este es el cuerpo del documento y aqui se ercribe lo que se ve en la página -->
@@ -40,7 +46,7 @@
     <!-- Títulos -->
     <!-- Debe existir solo h1 -->
     <h2>Encabezados HTML</h2>
-    <h1>Encabezado de nivel 1</h1>
+    <h1>Encabezado de nivel 1 - solo puede existir uno por documento</h1>
     <h2>Encabezado de nivel 2</h2>
     <h3>Encabezado de nivel 3</h3>
     <h4>Encabezado de nivel 4</h4>
@@ -118,7 +124,8 @@
         Para el símbolo < Se usa &lt;
         Para el símbolo > Se usa &gt; 
     -->
-    <pre>
+    <p>
+      <pre>
         <code>
             &lt;!DOCTYPE html&gt;
             &lt;html&gt;
@@ -131,6 +138,46 @@
             &lt;/html&gt;
         </code>
     </pre>
+    </p>
+    <hr>
+    <h2>Etiquetas semánticas estructurales</h2>
+    <div>div - Etiqueta contenedora que no tiene semántica</div>
+    <header>header - Cabecera de un sitio web o sección</header>
+    <main>main - Define el contenido principal del sitio web o de la sección - solo debe existir uno por documento</main>
+    <footer>footer - Pie de página de un sitio web o sección</footer>
+    <nav>nav - Representa un menu de navegación</nav>
+    <article>
+      article - Representa una sección autocontenida, se explica por si sola
+    </article>
+    <aside>aside - Representa contenido complementario o secundario</aside>
+    <section>section - Representa una sección de contenido genérico</section>
+    <address>address - representa una dirección física o información de contacto</address>
+    <hr>
+    <h2>Etiquetas de Bloque vs Etiquetas de línea</h2>
+    <div style="background-color: yellow; color: red;">La etiqueta de bloque por excelencia es la div - es una etiqueta de bloque es aquella que genera un salto de línea con las etiquetas hermanas</div>
+    <span style="background-color: greenyellow;">La etiqueta de línea por excelencia es span - una etiqueta de linea solo ocupa el espacio necesario que tiene su contenido</span>
+    <span>Hola soy otra span</span>
+    <hr>
+    <h2>Estilos CSS en HTML</h2>
+    <p>- Directamente en la etiqueta con style = "propiedad:valor"</p>
+    <p>- Ubicando la etiqueta style en la cabecera</p>
+    <p>- Poniendo el link al archivo de estilos CSS creado aparte del HTML</p>
+    <hr>
+    <h2>Scripts en html</h2>
+    <p>Mediante la etiqueta script antes de finalizar el body</p>
+    <p>Mediante la etiqueta script y linjeando el archivo js con src antes de finalizar el body</p>
+    <hr>
+    <h2>Imágenes</h2>
+    <img src="./img/crab-svgrepo-com.svg" alt="Animal cangrejo">
+    <img src="./img/img-gif.gif" alt="Imagen animada gif">
+    <img src="./img/paisaje.jpg" alt="Atardecer en puerto">
+    <img src="./img/pngegg.png" alt="Musica">
+    <img src="" alt="Descripcion de la imagen">
+    
     <h2>Voy en 2:03:25 Seccion 20</h2>
+    <script>
+      console.log("Hola estamos aprendiendo HTML")
+    </script>
+    <script src="./assets/codigos.js"></script>
   </body>
 </html>
